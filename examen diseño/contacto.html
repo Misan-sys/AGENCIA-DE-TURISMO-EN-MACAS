@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Formulario de contacto y reserva de EcoMacas para planificar tours en Macas, Morona Santiago.">
+  <title>Contacto | EcoMacas</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Inicio EcoMacas">
+        <img src="images/logo.svg" alt="Logo de EcoMacas">
+        <span class="brand">EcoMacas</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="destinos.html">Destinos</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html" class="btn-nav active">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-main">
+    <section class="page-intro">
+      <p class="eyebrow dark">Contacto</p>
+      <h1>Reserva tu experiencia</h1>
+      <p>Completa el formulario y te ayudaremos a diseñar el tour ideal para tu visita a Macas.</p>
+    </section>
+
+    <form action="#" method="post" class="contact-form">
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="0999999999">
+      </div>
+
+      <div class="form-group">
+        <label for="destino">Destino o actividad</label>
+        <select id="destino" name="destino" required>
+          <option value="">-- Seleccionar --</option>
+          <option value="cascada-condores">Cascada Los Cóndores</option>
+          <option value="reserva-rio-blanco">Reserva Ecológica Río Blanco</option>
+          <option value="tour-cultural">Tour cultural Shuar</option>
+          <option value="tour-aventura">Tour de aventura</option>
+          <option value="paquete-fin-de-semana">Paquete fin de semana</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha" name="fecha" required>
+      </div>
+
+      <div class="form-group">
+        <label for="personas">Número de personas</label>
+        <input type="number" id="personas" name="personas" min="1" value="1" required>
+      </div>
+
+      <div class="form-group wide">
+        <label for="tipo">Tipo de servicio</label>
+        <select id="tipo" name="tipo">
+          <option value="tour-naturaleza">Tour de naturaleza</option>
+          <option value="tour-cultural">Tour cultural</option>
+          <option value="tour-aventura">Tour de aventura</option>
+          <option value="paquete-fin-de-semana">Paquete fin de semana</option>
+        </select>
+      </div>
+
+      <div class="form-group wide">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos tus intereses, fechas o preferencias..."></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">Enviar</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 EcoMacas - Turismo en Macas.</p>
+      <nav class="footer-nav" aria-label="Navegación del pie de página">
+        <a href="index.html">Inicio</a>
+        <a href="destinos.html">Destinos</a>
+        <a href="servicios.html">Servicios</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
